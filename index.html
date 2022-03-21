@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
+    <link rel="icon" href="img/favicon.ico">
 
     <!-- FONTS -->
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- CSS -->
 
@@ -19,44 +23,81 @@
 
     <!-- MAIN -->
     <main>
-
-        <div class="container">
-
             <!-- LEFT MENU -->
 
-            <section class="left-menu">
-
-                <div class="top-nav">
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quos dicta sapiente inventore dolores, voluptatem saepe, omnis alias, mollitia architecto illo accusantium tenetur adipisci ullam obcaecati vero consectetur! Dicta, laudantium.</p>
-    
+            <div class="container">
+                <div id="sidebar">
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="">
+                    </div>
+                    <div id="nav">
+                        <ul>
+                            <li class="active">
+                                <a href="#">
+                                    <img src="img/home.svg" alt="">
+                                    <span class="label">Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/search.svg" alt="">
+                                    <span class="label">Cerca</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/libreria.svg" alt="">
+                                    <span class="label">La tua libreria</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="playlist-header">
+                        <h2>PLAYLIST</h2>
+                        <div id="create-playlist">
+                            <a href="#">
+                            <span class="add-icon">+</span>
+                            Crea Playlist
+                            </a>
+                        </div>
+                    </div>
+                    <div id="playlist-list">
+                        <ul>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                        </ul>
+                    </div>
+                    <div id="sidebar-bottom">
+                        <div class="download-link">
+                            <a href="#">
+                                <img src="img/download.svg" alt="">
+                                <span>Installa app</span>
+                            </a>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="profile">
+                            <span class="profile-pic"></span>
+                            <span class="profile-name">John Doe</span>
+                        </div>
+                    </div>
                 </div>
-    
-                <div class="bottom-nav">
 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia facilis ad sint, quae ipsa possimus, provident distinctio sapiente delectus, molestiae reiciendis. Nihil commodi eos, assumenda itaque ex odio libero delectus.</p>
+                <!-- PLAYLIST LIST -->
     
-                </div>
-    
-            </section>
-
-            <!-- /LEFT MENU -->
-
-            <!-- PLAYLIST LIST -->
-    
-            <section class="playlist-list">
+                <section class="playlist-list">
 
                 <!-- TOP BUTTON -->
 
                 <section class="top-btn">
 
-                    <section class="upgrade">
-
-                        <div class="btn btn-large">
-                            <a href=""><span>EFFETTUA L'UPGRADE</span></a>
-                        </div>
-
-                    </section>
+                    <div class="btn btn-large upgrade-btn">
+                        <a href=""><span>EFFETTUA L'UPGRADE</span></a>
+                    </div>
 
                 </section>
 
@@ -69,7 +110,7 @@
                     <ul class="li-top-menu">
                         <li>
                             <div class="g-border">
-                                <a href="">IN EVIDENZA</a>
+                                
                             </div>
                         </li>
                         <li><a href="">PODCAST</a></li>
@@ -85,132 +126,13 @@
 
                 <!-- PLAYLIST -->
 
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
-                <section class="playlist">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ratione ad nihil fugit laboriosam numquam, fugiat, quidem amet hic, blanditiis laborum dicta placeat maiores soluta cum! Magni, rem placeat? Maxime?</p>
-
-                </section>
-
                 <!-- /PLAYLIST LIST -->
 
-            </section>
+                </section>
 
             <!-- /PLAYLIST LIST -->
+            </div>
 
-        </div>
 
     </main>
     <!-- /MAIN -->
@@ -235,3 +157,17 @@
     
 </body>
 </html>
+
+    <!-- icone  
+        <i class="far fa-heart"></i>
+        <i class="far fa-folder"></i>
+        <i class="fas fa-random"></i>
+        <i class="fas fa-step-backward"></i>
+        <i class="far fa-play-circle"></i>
+        <i class="fas fa-step-forward"></i>
+        <i class="fas fa-redo-alt"></i>
+        <i class="fas fa-list"></i>
+        <i class="fas fa-desktop"></i>
+        <i class="fas fa-volume-up"></i>
+        <i class="fas fa-plus-square"></i>
+    -->

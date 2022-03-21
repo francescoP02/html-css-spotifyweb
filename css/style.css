@@ -8,27 +8,24 @@
 
 /* COMMON */
 
-html {
+body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 100%;
-}
-
-img {
-    width: 100%;
-}
-
-li {
-    text-decoration: none;
-    color: lightgray;
-}
-
-ul {
-    list-style: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #a3a3a3;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+a:hover {
+    color: white;
+}
+
+ul {
+    list-style: none;
 }
 
 /* BUTTONS */
@@ -44,54 +41,158 @@ a {
     font-size: .6em;
 }
 
+.upgrade-btn {
+    margin-right: 1rem;
+}
+
 /* MAIN */
 
-/* LEFT-MENU */
-
 .container {
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
 
-.left-menu {
-    background-color: cadetblue;
-    height: calc(100vh - 90px);
-    width: 15%;
+
+/* LEFT-MENU */
+
+/* SIDEBAR COMMON */
+#sidebar {
+    width: 15rem;
+    height: calc(100% - 55px);
+    background-color: black;
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
 }
 
-.top-nav {
-    background-color: chartreuse;
+#sidebar > div {
+    padding: 1rem;
+    width: 100%;
 }
 
-.bottom-nav {
-    background-color: cornflowerblue;
+#sidebar h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#sidebar li {
+    padding: 0.5rem 1rem;
+    border-left: 3px solid transparent;
+}
+
+/* SIDEBAR LOGO */
+#sidebar .logo img {
+    height: 3rem;
+}
+
+/* SIDEBAR NAV */
+
+#nav {
+    padding: 0;
+}
+
+#nav img {
+    height: 1.5em;
+    vertical-align: middle;
+}
+
+#nav li.active {
+    border-left: 3px solid #adff2f;
+    color: #cecece;
+}
+
+
+/* SIDEBAR PLAYLIST */
+#sidebar #playlist-header {
+    padding-bottom: 0;
+}
+
+#sidebar #playlist-list {
+    padding-top: 0;
+    overflow-y: auto;
+    min-height: 5rem;
+}
+
+#create-playlist {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.add-icon {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    vertical-align: middle;
+    background-color: #a3a3a3;
+    color: black;
+}
+
+#create-playlist:hover .add-icon {
+    background-color: white;
+}
+#create-playlist:hover a {
+    color: white;
+}
+
+
+/* SIDEBAR BOTTOM */
+#sidebar-bottom {
+    margin-top: auto;
+}
+
+.download-link img {
+    height: 1rem;
+    vertical-align: middle;
+}
+
+#sidebar-bottom .separator {
+    background-color:#a3a3a3;
+    height: 1px;
+    margin: 0.8rem 0;
+}
+
+.profile-pic {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    background-color: #a3a3a3;
+    background-image: url('../img/profile.svg');
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.profile-name {
+    color: white;
+    font-weight: 600;
 }
 
 /* PLAYLIST */
 
 .playlist-list {
     background-color: #141922;
-    height: calc(100vh - 90px);
-    width: 85%;
+    width: calc(100% - 15%);
     overflow-y: auto;
 }
 
 .top-btn {
-    background-color: black;
-    opacity: .6;
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: right;
     align-items: center;
-    width: 100%;
+    width: calc(100% - 15%);
+    z-index: 999;
 }
 
-.upgrade {
-    margin-right: 18%;
+.upgrade-btn:hover {
+    transform: scale(1.1);
 }
 
 .top-menu {
@@ -117,7 +218,7 @@ a {
 
 footer {
     background-color: black;
-    height: 90px;
+    height: 55px;
     display: flex;
     flex-direction: row;
 }
@@ -136,3 +237,4 @@ footer {
     background-color: aquamarine;
     width: 20%;
 }
+
