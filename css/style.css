@@ -12,6 +12,59 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-body {
+/* MAIN */
+
+/* LEFT-MENU */
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-menu {
+    background-color: cadetblue;
+    height: calc(100vh - 90px);
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-nav {
+    background-color: chartreuse;
+}
+
+.bottom-nav {
+    background-color: cornflowerblue;
+}
+
+/* PLAYLIST */
+
+.playlist {
+    background-color: #141922;
+    height: calc(100vh - 90px);
+    width: 85%;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-f {
+    background-color: aquamarine;
+    width: 20%;
+}
+
+.center-f {
     background-color: aqua;
+    width: 60%;
+}
+
+.right-f {
+    background-color: aquamarine;
+    width: 20%;
 }
