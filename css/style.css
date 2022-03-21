@@ -31,6 +31,19 @@ a {
     color: inherit;
 }
 
+/* BUTTONS */
+
+.btn {
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-large {
+    padding: .8em 1.5em;
+    border-radius: 50px;
+    font-size: .6em;
+}
+
 /* MAIN */
 
 /* LEFT-MENU */
@@ -69,13 +82,22 @@ a {
     background-color: black;
     opacity: .6;
     position: fixed;
-    height: 60px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+}
+
+.upgrade {
+    margin-right: 18%;
 }
 
 .top-menu {
     background-color: #141922;
     height: 60px;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .li-top-menu {
@@ -85,6 +107,10 @@ a {
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.g-border {
+    border-bottom: 2px solid green;
 }
 
 /* FOOTER */
