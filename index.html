@@ -5,139 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
-    <link rel="icon" href="img/favicon.ico">
 
+    <!-- FAVICON -->
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-- FONTS -->
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
 
     <link rel="stylesheet" href="css/style.css">
-
+    
 </head>
 <body>
 
     <!-- MAIN -->
-    <main>
-            <!-- LEFT MENU -->
 
-            <div class="container">
-                <div id="sidebar">
-                    <div class="logo">
-                        <img src="img/logo.svg" alt="">
-                    </div>
-                    <div id="nav">
-                        <ul>
-                            <li class="active">
-                                <a href="#">
-                                    <img src="img/home.svg" alt="">
-                                    <span class="label">Home</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="img/search.svg" alt="">
-                                    <span class="label">Cerca</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="img/libreria.svg" alt="">
-                                    <span class="label">La tua libreria</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="playlist-header">
-                        <h2>PLAYLIST</h2>
-                        <div id="create-playlist">
+    <main>
+
+        <div class="container">
+            <!-- SIDEBAR  -->
+            <div class="sidebar">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="">
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li class="active">
                             <a href="#">
-                            <span class="add-icon">+</span>
-                            Crea Playlist
+                                <img src="img/home.svg" alt="">
+                                <span class="label">Home</span>
                             </a>
-                        </div>
-                    </div>
-                    <div id="playlist-list">
-                        <ul>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                            <li><a href="#">Nome Playlist</a></li>
-                        </ul>
-                    </div>
-                    <div id="sidebar-bottom">
-                        <div class="download-link">
+                        </li>
+                        <li>
                             <a href="#">
-                                <img src="img/download.svg" alt="">
-                                <span>Installa app</span>
+                                <img src="img/search.svg" alt="">
+                                <span class="label">Cerca</span>
                             </a>
-                        </div>
-                        <div class="separator"></div>
-                        <div class="profile">
-                            <span class="profile-pic"></span>
-                            <span class="profile-name">John Doe</span>
-                        </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/libreria.svg" alt="">
+                                <span class="label">La tua libreria</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="playlist-header">
+                    <h2>PLAYLIST</h2>
+                    <div class="create-playlist">
+                        <a href="#">
+                        <span class="add-icon">+</span>
+                        Crea Playlist
+                        </a>
                     </div>
                 </div>
-
-                <!-- PLAYLIST LIST -->
-    
-                <section class="playlist-list">
-
-                <!-- TOP BUTTON -->
-
-                <section class="top-btn">
-
-                    <div class="btn btn-large upgrade-btn">
-                        <a href=""><span>EFFETTUA L'UPGRADE</span></a>
-                    </div>
-
-                </section>
-
-                <!-- /TOP BUTTON -->
-
-                <!-- TOP MENU -->
-
-                <section class="top-menu">
-
-                    <ul class="li-top-menu">
-                        <li>
-                            <div class="g-border">
-                                
-                            </div>
-                        </li>
-                        <li><a href="">PODCAST</a></li>
-                        <li><a href="">CLASSIFICHE</a></li>
-                        <li><a href="">GENERI E MOOD</a></li>
-                        <li><a href="">NUOVE USCITE</a></li>
-                        <li><a href="">SCOPRI</a></li>
+                <div class="playlist-list">
+                    <ul>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
                     </ul>
-
-                </section>
-
-                <!-- /TOP MENU -->
-
-                <!-- PLAYLIST -->
-
-                <!-- /PLAYLIST LIST -->
-
-                </section>
-
-            <!-- /PLAYLIST LIST -->
+                </div>
+                <div class="sidebar-bottom">
+                    <div class="download-link">
+                        <a href="#">
+                            <img src="img/download.svg" alt="">
+                            <span>Installa app</span>
+                        </a>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="profile">
+                        <span class="profile-pic"></span>
+                        <span class="profile-name">John Doe</span>
+                    </div>
+                </div>
             </div>
-
+            <div class="playlist">
+                <div class="banner">
+                    <div class="upgrade-btn">
+                        Effettua l'upgrade
+                    </div>
+                </div>
+                
+                <div class="top-menu">
+                    <ul>
+                        <li class="active"><a href="#">In evidenza</a></li>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">Classifiche</a></li>
+                        <li><a href="#">Generi e Mood</a></li>
+                        <li><a href="#">Nuove uscite</a></li>
+                        <li><a href="#">Scopri</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
 
     </main>
+
     <!-- /MAIN -->
 
     <!-- FOOTER -->
+
     <footer>
 
         <section class="left-f">
@@ -153,8 +132,9 @@
         </section>
 
     </footer>
+
     <!-- /FOOTER -->
-    
+
 </body>
 </html>
 
