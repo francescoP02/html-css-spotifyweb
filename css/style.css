@@ -400,7 +400,7 @@ footer .side-icons i {
 
 /* LEFT SECTION FOOTER */
 .left-f {
-    max-width: 15%;
+    max-width: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -558,6 +558,17 @@ footer .side-icons i {
     width:35%;
 }
 
+@media screen and (max-width: 699px) {
+    
+    footer .side-icons {
+        flex-direction: column;
+    }
+
+    .right-f {
+        width: 200px;
+    }
+
+}
 
 
 
