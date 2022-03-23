@@ -171,7 +171,7 @@ ul {
 
 /* SIDEBAR MEDIA QUERIES  */
 @media screen  and (max-width: 600px) {
-    
+
     .sidebar {
         width: 3.5rem;
         align-items: center;
@@ -380,23 +380,82 @@ ul {
 /* FOOTER */
 
 footer {
-    background-color: black;
+    width: 100%;
     height: 5rem;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .side-icons {
     display: flex;
     flex-direction: row;
 }
 
-.left-f {
-    background-color: aquamarine;
-    width: 20%;
+footer .side-icons i {
+    margin: 0 0.3rem;
 }
+
+
+/* LEFT FOOTER */
+.left-f {
+    max-width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.playing-song {
+    display: flex;
+    align-items: center;
+}
+
+.playing-song .artist {
+    margin-left: 0.5rem;
+}
+
+.playing-song h3 {
+    font-size: 0.8rem;
+    color: white;
+}
+.playing-song p {
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.playing-song h3 a:hover {
+    text-decoration: underline;
+}
+
+.left-f .f-img {
+    width: 3rem;
+}
+
+.left-f .f-img img {
+    width: 100%;
+}
+
+.left-f .side-icons {
+    font-size: 1rem;
+}
+
+/* CENTER FOOTER */
 
 .center-f {
     background-color: aqua;
-    width: 60%;
+    width: 70%;
 }
+
+/* RIGHT FOOTER */
 
 .right-f {
     background-color: aquamarine;
-    width: 20%;
+    width: 10%;
 }
+
+
+
