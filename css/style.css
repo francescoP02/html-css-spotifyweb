@@ -79,6 +79,10 @@ ul {
     height: 3rem;
 }
 
+#logo-small {
+    display: none;
+}
+
 /* SIDEBAR NAV */
 
 .nav {
@@ -165,6 +169,49 @@ ul {
 }
 
 
+/* SIDEBAR MEDIA QUERIES  */
+@media screen  and (max-width: 600px) {
+    
+    .sidebar {
+        width: 3.5rem;
+        align-items: center;
+    }
+
+    .sidebar > div {
+        padding: 0.5rem;
+        width: auto;
+    }
+
+    #logo-big,
+    .sidebar .label,
+    .sidebar .separator,
+    .playlist-header,
+    .playlist-list,
+    .profile-name {
+        display: none;
+    }
+
+    .sidebar #logo-small {
+        display: inline-block;
+        padding: 0.5rem;
+        font-size: 100%;
+    }
+
+    .sidebar .nav li,
+    .sidebar .nav li.active {
+        border: 0;
+    }
+    .download-link {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .install {
+        display: none;
+    }
+}
+
+
 /* MAIN CONTENT DIV */
 /* COMMON */
 .playlist {
@@ -198,7 +245,7 @@ ul {
     top: 0;
     left: 15rem;
     height: 80px;
-    width: calc(100% - 15rem);
+    width: calc(100% - 14rem);
     background-color: rgba(0,0,0, 0.5);
     display: flex;
     justify-content: flex-end;
@@ -207,6 +254,23 @@ ul {
 
 .upgrade-btn:hover {
     transform: scale(1.1);
+}
+
+/* MEDIA QUERY PLAYLIST AND BANNER WIDTH FOR 600px OR LESS */
+
+@media screen  and (max-width: 600px) {
+
+    .banner {
+        width: calc(100% - 3.5rem);
+    }
+
+    .playlist {
+        width: calc(100% - 3.5rem);
+    }
+
+    .banner {
+        left: 3.5rem;
+    }
 }
 
 /* TOP MENU */
@@ -236,11 +300,34 @@ ul {
 .card-container {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .card {
     width: calc(100% / 6 - 1rem);
     margin: 0 0.5rem;
+}
+
+/* MEDIA QUERY CARD FOR WIDHT 700 < px < 1100 */
+
+@media screen  and (max-width: 1099px) {
+
+    .card {
+        width: calc(100% / 4 - 1rem);
+        margin-bottom: 3rem;
+    }
+
+}
+
+/* MEDIA QUERY CARD FOR WIDHT px < 700 */
+
+@media screen  and (max-width: 699px) {
+
+    .card {
+        width: calc(100% / 2 - 1rem);
+        margin-bottom: 3rem;
+    }
+
 }
 
 .card img {
