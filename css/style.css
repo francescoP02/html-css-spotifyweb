@@ -398,7 +398,7 @@ footer .side-icons i {
 }
 
 
-/* LEFT FOOTER */
+/* LEFT SECTION FOOTER */
 .left-f {
     max-width: 15%;
     display: flex;
@@ -443,11 +443,11 @@ footer .side-icons i {
     font-size: 1rem;
 }
 
-/* CENTER FOOTER */
+/* CENTER SECTION FOOTER */
 
 .center-f {
     /* background-color: aqua; */
-    width: 70%;
+    width: 60%;
 }
 
 .control-song {
@@ -525,12 +525,39 @@ footer .side-icons i {
     background-color: white; 
 }
 
-/* RIGHT FOOTER */
+/* RIGHT SECTION FOOTER */
 
 .right-f {
-    background-color: aquamarine;
-    width: 10%;
+    /* background-color: aquamarine; */
+    width: 25%;
 }
+
+.settings {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    padding-right: 0.5rem;
+    margin-left: 0.5rem;
+    color: white;
+}
+
+.icons-settings i {
+    padding-right: .4rem;
+}
+
+#volume-bar {
+    min-width: 2.5rem;
+    max-width: 9rem;
+    margin-left: 0.6rem;
+    flex-grow: 1;
+}
+
+#current-volume {
+    width:35%;
+}
+
 
 
 
