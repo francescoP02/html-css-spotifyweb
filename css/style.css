@@ -40,6 +40,44 @@ ul {
     text-transform: uppercase;
 }
 
+/* CONTROL BAR */
+
+.control-bar {
+    width: 50%;
+    height: 4px;
+    background-color: rgb(90, 90, 90);
+    border-radius: 5em;
+    cursor: pointer;
+}
+
+.control-bar-overlay {
+    position: relative;
+    height: 100%;
+    width: 30%;
+    background-color: rgb(193, 193, 193);
+    border-radius: 5em;
+}
+
+.control-bar-circle {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.control-bar:hover .control-bar-overlay {
+    background-color: #adff2f; 
+}
+
+.control-bar:hover .control-bar-circle {
+    display: block;
+}
+
 /* TOP */
 .container {
     display: flex;
@@ -400,7 +438,7 @@ footer .side-icons i {
 
 /* LEFT SECTION FOOTER */
 .left-f {
-    max-width: 20%;
+    width: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -447,7 +485,7 @@ footer .side-icons i {
 
 .center-f {
     /* background-color: aqua; */
-    width: 60%;
+    width: calc(100% - 400px);
 }
 
 .control-song {
@@ -485,51 +523,16 @@ footer .side-icons i {
     color: white;
 }
 
-#time-bar {
-    width: 25vw;
-    margin: 0 0.5rem;
-}
-
-#current-time {
-    top:0;
-    left: 0;
-    width: 30%;
-}
-
-.bar,.sub-bar {
-    height: 6px;
-    border-radius: 6px;
-}
-
-.bar {
-    background-color: rgb(90, 90, 90);
-}
-
-.sub-bar {
-    background-color: rgb(193, 193, 193);
-    position: relative;
-}
-
-.bar:hover .sub-bar {
-    background-color: rgb(173, 255, 47); 
-}
-
-.bar:hover .sub-bar::after {
-    content: '';
-    position: absolute;
-    top: calc(6px / 2 - 14px / 2);
-    right: calc(0rem - 14px / 2);
-    height: 14px;
-    width: 14px;
-    border-radius: 0.8rem;
-    background-color: white; 
+.center-f .control-bar {
+    width: 20vw;
+    margin: 0 1em;
 }
 
 /* RIGHT SECTION FOOTER */
 
 .right-f {
     /* background-color: aquamarine; */
-    width: 25%;
+    width: 200px;
 }
 
 .settings {
@@ -564,11 +567,6 @@ footer .side-icons i {
         flex-direction: column;
     }
 
-    .right-f {
-        width: 200px;
-    }
-
 }
-
 
 
